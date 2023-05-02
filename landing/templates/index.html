@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг-страница Huawei</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <header class="bg-primary text-white text-center py-5">
+        <nav class="d-flex justify-content-start">
+            <ul class="d-flex">
+                <li class="mx-2"><a href="{% url 'landing' %}" class="text-white">Главная</a></li>
+                <li class="mx-2"><a href="{% url 'about' %}" class="text-white">О нас</a></li>
+                <li class="mx-2"><a href="{% url 'contacts' %}" class="text-white">Контакты</a></li>
+            </ul>
+        </nav>
+        <h1>Добро пожаловать на лендинг-страницу Huawei</h1>
+        <img src="{% static 'images/huawei_2.png' %}" class="scaled-image">
+    </header>
+
+    <section id="products" class="container py-5">
+        <h2 class="text-center mb-4">Наши продукты</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image_url_1" class="card-img-top" alt="Изображение продукта 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Планшет Huawei</h5>
+                        <p class="card-text">Описание планшета Huawei...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image_url_2" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Ноутбук Huawei</h5>
+                        <p class="card-text">Описание ноутбука Huawei...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image_url_3" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Смартфон Huawei</h5>
+                        <p class="card-text">Описание смартфона Huawei...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2023 Huawei. Все права защищены.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
